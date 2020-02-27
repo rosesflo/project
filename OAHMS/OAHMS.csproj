@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45998387-BA9B-40DE-8B8F-D35994FC0FAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OAHMS</RootNamespace>
+    <AssemblyName>OAHMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity Card.Designer.cs">
+      <DependentUpon>Activity Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity_Detail2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity_Detail2.Designer.cs">
+      <DependentUpon>Activity_Detail2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activity_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity_Details.Designer.cs">
+      <DependentUpon>Activity_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cards.Designer.cs">
+      <DependentUpon>Cards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayReport.Designer.cs">
+      <DependentUpon>DisplayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Card.Designer.cs">
+      <DependentUpon>Employee Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetails.Designer.cs">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Details.Designer.cs">
+      <DependentUpon>Employee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medical Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medical Card.Designer.cs">
+      <DependentUpon>Medical Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOK Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOK Card.Designer.cs">
+      <DependentUpon>NOK Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OAHMSDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OAHMSDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportListing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportListing.Designer.cs">
+      <DependentUpon>ReportListing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptResidentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptResidentList.Designer.cs">
+      <DependentUpon>RptResidentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resident Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resident Card.Designer.cs">
+      <DependentUpon>Resident Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Residents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Residents.Designer.cs">
+      <DependentUpon>Residents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Activity Card.resx">
+      <DependentUpon>Activity Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity_Detail2.resx">
+      <DependentUpon>Activity_Detail2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activity_Details.resx">
+      <DependentUpon>Activity_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cards.resx">
+      <DependentUpon>Cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayReport.resx">
+      <DependentUpon>DisplayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Card.resx">
+      <DependentUpon>Employee Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetails.resx">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Details.resx">
+      <DependentUpon>Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medical Card.resx">
+      <DependentUpon>Medical Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NOK Card.resx">
+      <DependentUpon>NOK Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="ReportListing.resx">
+      <DependentUpon>ReportListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptResidentList.resx">
+      <DependentUpon>RptResidentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resident Card.resx">
+      <DependentUpon>Resident Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Residents.resx">
+      <DependentUpon>Residents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OAHMSDataSet.xsc">
+      <DependentUpon>OAHMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet.xss">
+      <DependentUpon>OAHMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet1.xsc">
+      <DependentUpon>OAHMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet1.xss">
+      <DependentUpon>OAHMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet10.xsc">
+      <DependentUpon>OAHMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet10.xss">
+      <DependentUpon>OAHMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet11.xsc">
+      <DependentUpon>OAHMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet11.xss">
+      <DependentUpon>OAHMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet12.xsc">
+      <DependentUpon>OAHMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet12.xss">
+      <DependentUpon>OAHMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet13.xsc">
+      <DependentUpon>OAHMSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet13.xss">
+      <DependentUpon>OAHMSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet14.xsc">
+      <DependentUpon>OAHMSDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet14.xss">
+      <DependentUpon>OAHMSDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet15.xsc">
+      <DependentUpon>OAHMSDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet15.xss">
+      <DependentUpon>OAHMSDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet16.xsc">
+      <DependentUpon>OAHMSDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet16.xss">
+      <DependentUpon>OAHMSDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet2.xsc">
+      <DependentUpon>OAHMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet2.xss">
+      <DependentUpon>OAHMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet3.xsc">
+      <DependentUpon>OAHMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet3.xss">
+      <DependentUpon>OAHMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet4.xsc">
+      <DependentUpon>OAHMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet4.xss">
+      <DependentUpon>OAHMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet5.xsc">
+      <DependentUpon>OAHMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet5.xss">
+      <DependentUpon>OAHMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet6.xsc">
+      <DependentUpon>OAHMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet6.xss">
+      <DependentUpon>OAHMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet7.xsc">
+      <DependentUpon>OAHMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet7.xss">
+      <DependentUpon>OAHMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet8.xsc">
+      <DependentUpon>OAHMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet8.xss">
+      <DependentUpon>OAHMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet9.xsc">
+      <DependentUpon>OAHMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="OAHMSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OAHMSDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OAHMSDataSet9.xss">
+      <DependentUpon>OAHMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-Final.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OAHMS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OAHMS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>OAHMS.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Untitled1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
